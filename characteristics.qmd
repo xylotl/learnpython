@@ -1,0 +1,28 @@
+# Characteristics of Python
+
+Before getting into how to write python code, it's good to understand not only how it works, but some basic concepts that will make things a bit easier. If you don't get some of the things on this page, that's okay. You can come back later once you've learnt a bit about how to write python code.
+
+## Basic Terminology
+As we go throughout the chapters, there will be a lot of words introduced to you. In the appendix, there is a [glossary](glossary.qmd) with all important terms.
+
+## Python Scripts
+
+To write code, we normally write it in a *script*. In python, this is a file ending with **.py**. When we run these scripts, it will go through all of the code in the script at once. In the upcoming chapters, there will be examples of code. If we were to download these files and name them *example.py*, then we'd be able to run them on your own device too.
+
+Most IDEs come with ability to run your code within them, however if you aren't using an IDE or just simply want to run your code without opening it, run it using *python <filename>* on mac/linux and *python3 <filename>* on windows.
+
+## Interpretative
+
+Python is an interpretative language. What does that mean? Well when you write out your script, you can run it straight away. That makes it easy to check your code while you're writing it,to make sure it works. 
+
+::: {.callout-note collapse=true title="How do other languages work?"}
+In other languages, the code needs to be *compiled* before it can be run. What both languages need is to convert their language from the human readable code you wrote, to something your computer understands -- this is called machine language. All that means is that python actively comverts it to machine language as it runs, however compiled languages translate the entirety of the code first. This makes it faster, but a bit more complex.
+:::
+
+## Formatting
+
+Most languages have an agreed upon standard so people can understand each other's code easier. By standard, we mean how your code looks. Things such as spaces between words, how things are named and more. As we go throughout the chapters, some of these will be pointed out. It's not a firm rule you must follow, however highly encouraged to improve the quality of your code.
+
+## Python2? Python3!
+
+Python was first released in 1991, which was a long time ago. As a result, python has gone through various iterations. Python2 is a deprecated form of python you may see around in places with outdated software. It has various quirks that distinguish it from Python3, the current version of python. These include the print function having spaces instead of brackets. Versioning is important because sometimes newer versions of python introduce new things the older versions of python don't have, and if you try to use those things on something running an older version of python,it won't work despite being correct! If you want to ensure your programs don't break between updates you need to create an *environment* for your program to make it stay on the version you know works -- you'll find out more about this later.

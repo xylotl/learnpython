@@ -1,0 +1,30 @@
+# Installing and setting up python
+
+If you want to run python on your own device instead of on a website such as this one, you'll need to install python, and a way to write your code.
+
+## Install Python
+
+### Windows
+
+If you're on windows, you'll want to download python from the top link under Stable Releases [here](https://www.python.org/downloads/windows/), then follow the installer instructions.
+
+### MacOS
+
+If you're on MacOS, you'll want to download python from the top link under Stable Releases [here](https://www.python.org/downloads/macos/), then follow the installer instructions.
+
+### Linux
+If you're on linux, you probably know what you're doing. Just download it through your package manager.
+
+## Editor
+To write python code locally, you'll need to write it on something. Any text editor can do the job, such as notepad, however you're going to want something with more capability and support for python. 
+
+### IDEs
+
+IDEs, also known as Integrated development environments, are made especially for people to write code in. There are many available and finding one that suits you is a matter of preference. If you don't want to research what's available to suit your style specifically, I'll note some popular ones and their set-up guides.
+
+#### VSCode
+
+This is one of the most popular IDEs available. It supports almost any program language so may be a suitable option if you want to learn more languages in the future. It's download link is [here](https://code.visualstudio.com/Download). To set it up for python, you'll want to find the extensions button on the sidebar and search up python. Click install on the official microsoft extensions.
+
+#### Pycharm
+This is an IDE specifically for python. No need to install extensions, it's all ready to go. Download it [here](https://www.jetbrains.com/pycharm/download)

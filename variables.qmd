@@ -4,14 +4,67 @@ In coding, all data we utilise to represent *something* can be categorised into 
 
 Think about a library. Each aisle has a different category, which they refer to by a number, or a name. Within those aisles are lots of books fitting that category. Each book is assigned a number, so the librarians can easily find the books a reader may refer to so they can check it out for them if they can't find. In coding, those numbers that the books are refered by are variables,and the categories are data types.
 
-## Variables
+
+## Data Types
 
 ### Integers (Ints)
+
 Think about maths at school. Have you studied what an integer is? They're the exact same thing in programming! You'll find that with a lot of programming concepts, that they relate back to maths because computer science (which programming originated from) is very specific type of mathematics, which we call applied mathematics. 
 If you don't know what an integer is,that's okay! An integer is just a whole number. So 4, 249,1739101. It doesn't matter how long it is,it just can't be a fraction or have a decimal.
 
 ### Floats
-These are your decimal numbers. So 5.8, 0.126, 190.153920918. It can be any number of decimal places,it just has to have that decimal point.
+
+These are your decimal numbers. So 5.8, 0.126, 190.153920918. It can be any number of decimal places, it just has to have that decimal point.
 
 ### Characters (Chars)
-These are any singular letter enclosed in quotation marks (""). It doesn't have to be a number, it can be a number or an actual character/symbol too!. So 'a', '3', '/'. 
+
+These are any singular letter enclosed in quotation marks (''). It doesn't have to be an alphabetical letter, it can be a number or an actual character/symbol too!. So 'a', '3', '/'. The quotation marks are important to make sure Python knows you're calling a char, which becomes important if you want to represent a number as a letter -- it'd just think it's an integer otherwise!
+
+### Strings
+Think of anytime you have to quote something someone said. "It's like this, right?". This is what we call a string in programming. If you want to quote something or display text, you'll have to wrap it in quotation marks. Otherwise, how else will Python know you want that to be displayed as text and not call variable names that may or may not exist.
+
+::: {.callout-note collapse=true title="Strings in other Programming Languages"}
+In other programming languages, strings aren't a data type and instead are considered an array of chars. 
+:::
+
+### Boolean
+
+Boolean is an important data type. They're the foundation for conditionals and are everywhere not only in programming but in real life. Boolean has two possible choices, either it's True or it's False. Think of a light switch, it can only be either on or off. This is what we call binary. You'll see this a lot in maths, and computers themselves rely on binary digits.
+
+::: {.callout-note title="More info on Binary within Computing" collapse=true}
+Within computer science, they are refered to as bits, which hold values of 1(True) or 0(False). In other programming languages, they don't have a boolean data type or may only represent it as 1 or 0. In python, we can use words to make it easier - True and False. If you go on to study computer science, you'll find out about boolean algebra. 
+:::
+
+::: {.callout-warning}
+## Caution with Capitalisation
+
+In Python, True and False must be capitalised otherwise it'll think you're talking about an object or variable named true and false. (We'll  get to objects later ;))
+:::
+
+::: {.callout-note collapse=true}
+## Bonus: Data Type Declaration
+In other languages, you have to declare the data types before you use them so the program knows what your data is meant to be. Python makes this easy as it recognises what data type you wrote based on its characteristics so you don't need to.
+:::
+
+## Variables
+
+As stated above, to make things easier for ourselves, we can store important data in *variables*. Throughout our code, instead of writing that same data over and over again, we can recall it simply with a variable. This comes in handy if our data is very long! It makes our code clean too, so other people can read it more easily.
+
+### Naming variables
+We name variables as descriptively as we can so it's easier to remember when we recall it. So if we have a integer, we may want to name it number. If we have multiple numbers with different meanings, maybe we'll name one *mean* if we're calculating the mean of student scores, *count* if we're counting something or *studentTotal* if we're tallying students in the class. If we're getting the user's name, *name* itself could work. Think about what your variable represents and call it that. Just make sure it's short enough to recall easily so it's readable.
+
+### Assigning Variables
+
+What name did you just come up with? That's the first thing we need to type -- the name of our variable. Then, we need an equals sign (=),then lastly we type what we want to store in the variable -- our data types.
+
+> nameOfVariable = "This is our data type - a string!"
+
+It'll be easier to remember if you consider the equals sign the thing that balances both sides. We read it from right to left, opposite to how English is read. First the python interpreter will look at the right side, and find our long string "This is our data type - a string!". Then is comes across to the equals sign, and it knows it needs to assign it. Then it sees *nameOfVariable*, and now it knows where to put that string. 
+
+::: {.callout-note collapse=true title="How does it know that?"}
+Since Python is such a simple language, it abstracts (or hides) a lot to the user. They don't need to know how it works, it just does. Normally when it sees a string, it just blips through it and forgets it after its used it. When it assigns it to a variable, it stores it in *memory*. Think of memory like a whole bunch of addresses -- like your email contact list. You'd probably have a name to an email address, so you can just type in their name instead of having to remember their email address. That variable name is really a *pointer*, pointing to the address where your data is stored. 
+:::
+
+Notice how two spaces were placed on either side of the equals sign? This is a formatting convention in python. To make it more readable, make sure to place a space on either side of the equals sign.
+
+

@@ -1,6 +1,5 @@
 project:
   type: book
-  output-dir: public
 
 number-depth: 2
 filters:
@@ -9,13 +8,17 @@ filters:
 book:
   title: "Intro to Python for Kids and Teens"
   author: "Xylotl"
-  date: "25/04/2026"
+  date: last-modified 
+  date-format: medium
+  page-navigation: true
   chapters:
     - index.qmd
     - intro.qmd
+    - setup.qmd
     - part: "Basics"
       chapters:
-       - variables.qmd
+        - characteristics.qmd
+        - variables.qmd
   appendices:
     - playground.qmd
 
@@ -24,8 +27,4 @@ format:
     theme:
       - cosmo
       - brand
-  pdf:
-    documentclass: scrreprt
-
-
 
