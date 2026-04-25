@@ -1,0 +1,4 @@
+/.quarto/
+**/*.quarto_ipynb
+references.bib
+references.qmd

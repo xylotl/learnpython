@@ -1,0 +1,17 @@
+# Data Types and Variables
+
+In coding, all data we utilise to represent *something* can be categorised into *types*. If we want to easily access it again, we must store it *somewhere*. 
+
+Think about a library. Each aisle has a different category, which they refer to by a number, or a name. Within those aisles are lots of books fitting that category. Each book is assigned a number, so the librarians can easily find the books a reader may refer to so they can check it out for them if they can't find. In coding, those numbers that the books are refered by are variables,and the categories are data types.
+
+## Variables
+
+### Integers (Ints)
+Think about maths at school. Have you studied what an integer is? They're the exact same thing in programming! You'll find that with a lot of programming concepts, that they relate back to maths because computer science (which programming originated from) is very specific type of mathematics, which we call applied mathematics. 
+If you don't know what an integer is,that's okay! An integer is just a whole number. So 4, 249,1739101. It doesn't matter how long it is,it just can't be a fraction or have a decimal.
+
+### Floats
+These are your decimal numbers. So 5.8, 0.126, 190.153920918. It can be any number of decimal places,it just has to have that decimal point.
+
+### Characters (Chars)
+These are any singular letter enclosed in quotation marks (""). It doesn't have to be a number, it can be a number or an actual character/symbol too!. So 'a', '3', '/'. 

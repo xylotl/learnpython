@@ -1,0 +1,23 @@
+# Introduction
+
+## Why do you want to learn python? Think about it for a moment.
+
+### Do you want to create something? What is that?
+#### If it's something web based:
+Unless it's backend (think what is running behind what you see on the website), maybe html, css and javascript would be better for you.
+
+#### If it's a game:
+An objected orientated language like c#,c++ or java would be more suitable,unless you want to make something very simple.
+
+### Are you unfamiliar with programming and just want to learn how to code?
+Python is ideal for you. If you've learnt scratch, it's the next step to *real* programming. It's simple, easy, and gets the job done. If you want to make a game or just code, it's a perfect stepping stone before you get into the deeper stuff.
+
+### Do you hate repeating things? Want to automate the things you do on a daily basis?
+Python is perfect for this task. If you have a Unix based system, learning a Bourne-based shell would be great to learn alongside,or if you're a windows user,powershell. Scrape the web, gather data, filter, it's all possible.
+
+### Interested in data science or AI?
+Most AI utilises python, so this is the language you want if you want to take a step up from just using chatgpt and *train your own model*. Python also has a lot of scientific libraries (these are additional things you can download to use more inbuilt code!) so it's great for data science and more scientific programming.
+
+### Don't know yet? That's okay!
+Try it and see if you like it.
+

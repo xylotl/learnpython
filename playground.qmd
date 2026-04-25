@@ -1,0 +1,7 @@
+# Playground
+Test any python code you want here, without restraints!
+
+
+```{pyodide-python}
+
+```
