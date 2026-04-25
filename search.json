@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Intro to Python for Kids and Teens",
+    "section": "",
+    "text": "Preface\nThis resource is created with the intention of introducing children and teenagers to python, however at an appropriate level without gameyfied coding. This is aimed towards kids with autism, and through relating basic programming concepts to easily recognisable everyday concepts, without dumbing it down. Not all learning styles can be accounted for, however several variations are attempted with the intention that at least one is understandable.\nThe structure will guide you through basic programming concepts, with demonstrations then the ability for you to type in your own code to demonstrate your understanding of the concepts. This is intended to be guided through with an instructor, to ensure your code is accurate. However there will be an example of a correct answer if you want to teach yourself or are simply stuck. There is also a playground if you want to just try out some code without being restricted to the lessons.\n\nCovering\n\nData types and variables\nInput and print\nConditional Statements\nLoops\n\nWhile\nFor\n\nArranging data types (Lists, arrays and more!)\nFunctions\nModules\nClasses\nAppendices\n\nFormatting\nEnvironments\nLibrary Package Installer",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1 Why do you want to learn python? Think about it for a moment.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#why-do-you-want-to-learn-python-think-about-it-for-a-moment.",
+    "href": "intro.html#why-do-you-want-to-learn-python-think-about-it-for-a-moment.",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "Do you want to create something? What is that?\n\nIf it’s something web based:\nUnless it’s backend (think what is running behind what you see on the website), maybe html, css and javascript would be better for you.\n\n\nIf it’s a game:\nAn objected orientated language like c#,c++ or java would be more suitable,unless you want to make something very simple.\n\n\n\nAre you unfamiliar with programming and just want to learn how to code?\nPython is ideal for you. If you’ve learnt scratch, it’s the next step to real programming. It’s simple, easy, and gets the job done. If you want to make a game or just code, it’s a perfect stepping stone before you get into the deeper stuff.\n\n\nDo you hate repeating things? Want to automate the things you do on a daily basis?\nPython is perfect for this task. If you have a Unix based system, learning a Bourne-based shell would be great to learn alongside,or if you’re a windows user,powershell. Scrape the web, gather data, filter, it’s all possible.\n\n\nInterested in data science or AI?\nMost AI utilises python, so this is the language you want if you want to take a step up from just using chatgpt and train your own model. Python also has a lot of scientific libraries (these are additional things you can download to use more inbuilt code!) so it’s great for data science and more scientific programming.\n\n\nDon’t know yet? That’s okay!\nTry it and see if you like it.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "variables.html",
+    "href": "variables.html",
+    "title": "2  Data Types and Variables",
+    "section": "",
+    "text": "2.1 Variables\nIn coding, all data we utilise to represent something can be categorised into types. If we want to easily access it again, we must store it somewhere.\nThink about a library. Each aisle has a different category, which they refer to by a number, or a name. Within those aisles are lots of books fitting that category. Each book is assigned a number, so the librarians can easily find the books a reader may refer to so they can check it out for them if they can’t find. In coding, those numbers that the books are refered by are variables,and the categories are data types.",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Types and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "variables.html#variables",
+    "href": "variables.html#variables",
+    "title": "2  Data Types and Variables",
+    "section": "",
+    "text": "Integers (Ints)\nThink about maths at school. Have you studied what an integer is? They’re the exact same thing in programming! You’ll find that with a lot of programming concepts, that they relate back to maths because computer science (which programming originated from) is very specific type of mathematics, which we call applied mathematics. If you don’t know what an integer is,that’s okay! An integer is just a whole number. So 4, 249,1739101. It doesn’t matter how long it is,it just can’t be a fraction or have a decimal.\n\n\nFloats\nThese are your decimal numbers. So 5.8, 0.126, 190.153920918. It can be any number of decimal places,it just has to have that decimal point.\n\n\nCharacters (Chars)\nThese are any singular letter enclosed in quotation marks (““). It doesn’t have to be a number, it can be a number or an actual character/symbol too!. So ‘a’, ‘3’, ‘/’.",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Types and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "playground.html",
+    "href": "playground.html",
+    "title": "Appendix A — Playground",
+    "section": "",
+    "text": "Test any python code you want here, without restraints!\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Playground</span>"
+    ]
+  }
+]
