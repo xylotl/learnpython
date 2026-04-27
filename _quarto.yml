@@ -19,6 +19,8 @@ book:
       chapters:
         - characteristics.qmd
         - variables.qmd
+        - conditional.qmd
+        - loops.qmd
   appendices:
     - playground.qmd
 

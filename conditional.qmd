@@ -1,0 +1,26 @@
+# Conditionals and Conditional Statements
+
+## Conditionals
+
+Conditionals are much like the type of statements you'll see in math. (1 < 5, 7 =>3) The power it holds when we use them in python is that we can compare variables to numbers through checking if it's greater than, less than or equal. Equal signs also work for strings and chara to check if they're equivalent. What may surprise you is that less than and greater than *also* work for chars. In reality, chars are actually just assigned numbers, these are deemed their ASCII values. These never change, so you can check if `'%' < 'A'`. An ASCII table is included below for your reference. 
+
+In python, we can check if a data type is equal by using `==`.
+
+The point of conditionals is that by comparing two data types, a boolean will be produced, telling you whether rhe conditional is true or false. This is why it's called a conditional, because it's a condition it must pass.
+
+```{python}
+magicNumber = 6
+magicString = "Magic!"
+print(f"Is magicNumber < 4?  {magicNumber < 4}")
+print(f"Does magicString == 'Magic!'? {magicString == 'Magic!'}")
+```
+
+### Logic
+
+Conditionals and booleans are a lot more complex than originally discussed. This involves something called *logic*. You may have heard logic used in other situations, like calling someone's argument or perspective illogical. Logic in this context,philosophy, is actually the same logic we use in mathematics and respectively, programming. 
+
+::: {.callout-note collapse=true title= }
+Formal logic is a whole lot more complex than what I'll briefly discuss, and if you're interested you may research it yourself. 
+:::
+
+

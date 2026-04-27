@@ -1,0 +1,22 @@
+# Loops
+
+When writing code, we tend to need to make something repeat itself. This enables us to not have to write multiple lines of code doing the same thing over and over again or with minor differences. You'll find below there are use cases for code that remains the same that we want to repeat,and some for code that we want to repeat everything except make the number increase each time. We'll get into those below.
+
+## While loops
+
+The basic concept of a while loop is that we want to repeat something while a conditional is true. What you expand beyond that, can be as simple or complex as you like. To exit that loop instead of have it run forever with no way to get out, is to do something to make that conditional false. Typically, in smaller programs like the example below, this will be something that will happen accordingly to the design of it, however in more complex scenarios you may need to check to see if another conditional is true, so you can then set the conditional for the while loop to false.
+
+>while(conditional):  
+>   do something  
+>    if something else:  
+>       conditional = false  
+
+```{python}
+number = 0
+while ( number < 10):
+    print("Entering the while loop")
+    number = number + 1
+    print(f"Adding {number} + 1")
+    print(f"Number is now set to {number}")
+```
+
