@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Intro to Python for Kids and Teens",
     "section": "",
-    "text": "Preface\nThis resource is created with the intention of introducing children and teenagers to python, however at an appropriate level without gameyfied coding. This is aimed towards kids with autism, and through relating basic programming concepts to easily recognisable everyday concepts, without dumbing it down. Not all learning styles can be accounted for, however several variations are attempted with the intention that at least one is understandable.\nThe structure will guide you through basic programming concepts, with demonstrations then the ability for you to type in your own code to demonstrate your understanding of the concepts. This is intended to be guided through with an instructor, to ensure your code is accurate. However there will be an example of a correct answer if you want to teach yourself or are simply stuck. There is also a playground if you want to just try out some code without being restricted to the lessons.\n\nCovering\n\nData types and variables\nInput and print\nConditional Statements\nLoops\n\nWhile\nFor\n\nArranging data types (Lists, arrays and more!)\nFunctions\nModules\nClasses\nAppendices\n\nFormatting\nEnvironments\nLibrary Package Installer",
+    "text": "Preface\nThis resource is created with the intention of introducing children and teenagers to python, however at an appropriate level without gameyfied coding. This is aimed towards kids with autism, and through relating basic programming concepts to easily recognisable everyday concepts, without dumbing it down. Not all learning styles can be accounted for, however several variations are attempted with the intention that at least one is understandable.\nThe structure will guide you through basic programming concepts, with demonstrations then the ability for you to type in your own code to demonstrate your understanding of the concepts. This is intended to be guided through with an instructor, to ensure your code is accurate. However there will be an example of a correct answer if you want to teach yourself or are simply stuck. There is also a playground if you want to just try out some code without being restricted to the lessons.\n\nCovering\n\nData types and variables\nInput and print\nConditional Statements\nLoops\n\nWhile\nFor\n\nArranging data types (Lists, arrays and more!)\nFunctions\nFile input and output\nErrors and Exceptions\nModules\nClasses\nAppendices\n\nFormatting\nEnvironments\nPackage Installer\nPopular Packages",
     "crumbs": [
       "Preface"
     ]
@@ -30,25 +30,165 @@
     ]
   },
   {
-    "objectID": "variables.html",
-    "href": "variables.html",
-    "title": "2  Data Types and Variables",
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "2  Installing and setting up python",
     "section": "",
-    "text": "2.1 Variables\nIn coding, all data we utilise to represent something can be categorised into types. If we want to easily access it again, we must store it somewhere.\nThink about a library. Each aisle has a different category, which they refer to by a number, or a name. Within those aisles are lots of books fitting that category. Each book is assigned a number, so the librarians can easily find the books a reader may refer to so they can check it out for them if they can’t find. In coding, those numbers that the books are refered by are variables,and the categories are data types.",
+    "text": "2.1 Install Python\nIf you want to run python on your own device instead of on a website such as this one, you’ll need to install python, and a way to write your code.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing and setting up python</span>"
+    ]
+  },
+  {
+    "objectID": "setup.html#install-python",
+    "href": "setup.html#install-python",
+    "title": "2  Installing and setting up python",
+    "section": "",
+    "text": "Windows\nIf you’re on windows, you’ll want to download python from the top link under Stable Releases here, then follow the installer instructions.\n\n\nMacOS\nIf you’re on MacOS, you’ll want to download python from the top link under Stable Releases here, then follow the installer instructions.\n\n\nLinux\nIf you’re on linux, you probably know what you’re doing. Just download it through your package manager.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing and setting up python</span>"
+    ]
+  },
+  {
+    "objectID": "setup.html#editor",
+    "href": "setup.html#editor",
+    "title": "2  Installing and setting up python",
+    "section": "2.2 Editor",
+    "text": "2.2 Editor\nTo write python code locally, you’ll need to write it on something. Any text editor can do the job, such as notepad, however you’re going to want something with more capability and support for python.\n\nIDEs\nIDEs, also known as Integrated development environments, are made especially for people to write code in. There are many available and finding one that suits you is a matter of preference. If you don’t want to research what’s available to suit your style specifically, I’ll note some popular ones and their set-up guides.\n\nVSCode\nThis is one of the most popular IDEs available. It supports almost any program language so may be a suitable option if you want to learn more languages in the future. It’s download link is here. To set it up for python, you’ll want to find the extensions button on the sidebar and search up python. Click install on the official microsoft extensions.\n\n\nPycharm\nThis is an IDE specifically for python. No need to install extensions, it’s all ready to go. Download it here",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Installing and setting up python</span>"
+    ]
+  },
+  {
+    "objectID": "characteristics.html",
+    "href": "characteristics.html",
+    "title": "3  Characteristics of Python",
+    "section": "",
+    "text": "3.1 Basic Terminology\nBefore getting into how to write python code, it’s good to understand not only how it works, but some basic concepts that will make things a bit easier. If you don’t get some of the things on this page, that’s okay. You can come back later once you’ve learnt a bit about how to write python code.\nAs we go throughout the chapters, there will be a lot of words introduced to you. In the appendix, there is a glossary with all important terms.",
     "crumbs": [
       "Basics",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Types and Variables</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Characteristics of Python</span>"
+    ]
+  },
+  {
+    "objectID": "characteristics.html#python-scripts",
+    "href": "characteristics.html#python-scripts",
+    "title": "3  Characteristics of Python",
+    "section": "3.2 Python Scripts",
+    "text": "3.2 Python Scripts\nTo write code, we normally write it in a script. In python, this is a file ending with .py. When we run these scripts, it will go through all of the code in the script at once. In the upcoming chapters, there will be examples of code. If we were to download these files and name them example.py, then we’d be able to run them on your own device too.\nMost IDEs come with ability to run your code within them, however if you aren’t using an IDE or just simply want to run your code without opening it, run it using python  on mac/linux and python3  on windows.",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Characteristics of Python</span>"
+    ]
+  },
+  {
+    "objectID": "characteristics.html#interpretative",
+    "href": "characteristics.html#interpretative",
+    "title": "3  Characteristics of Python",
+    "section": "3.3 Interpretative",
+    "text": "3.3 Interpretative\nPython is an interpretative language. What does that mean? Well when you write out your script, you can run it straight away. That makes it easy to check your code while you’re writing it,to make sure it works.\n\n\n\n\n\n\nNoteHow do other languages work?\n\n\n\n\n\nIn other languages, the code needs to be compiled before it can be run. What both languages need is to convert their language from the human readable code you wrote, to something your computer understands – this is called machine language. All that means is that python actively comverts it to machine language as it runs, however compiled languages translate the entirety of the code first. This makes it faster, but a bit more complex.",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Characteristics of Python</span>"
+    ]
+  },
+  {
+    "objectID": "characteristics.html#formatting",
+    "href": "characteristics.html#formatting",
+    "title": "3  Characteristics of Python",
+    "section": "3.4 Formatting",
+    "text": "3.4 Formatting\nMost languages have an agreed upon standard so people can understand each other’s code easier. By standard, we mean how your code looks. Things such as spaces between words, how things are named and more. As we go throughout the chapters, some of these will be pointed out. It’s not a firm rule you must follow, however highly encouraged to improve the quality of your code.",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Characteristics of Python</span>"
+    ]
+  },
+  {
+    "objectID": "characteristics.html#python2-python3",
+    "href": "characteristics.html#python2-python3",
+    "title": "3  Characteristics of Python",
+    "section": "3.5 Python2? Python3!",
+    "text": "3.5 Python2? Python3!\nPython was first released in 1991, which was a long time ago. As a result, python has gone through various iterations. Python2 is a deprecated form of python you may see around in places with outdated software. It has various quirks that distinguish it from Python3, the current version of python. These include the print function having spaces instead of brackets. Versioning is important because sometimes newer versions of python introduce new things the older versions of python don’t have, and if you try to use those things on something running an older version of python,it won’t work despite being correct! If you want to ensure your programs don’t break between updates you need to create an environment for your program to make it stay on the version you know works – you’ll find out more about this later.",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Characteristics of Python</span>"
+    ]
+  },
+  {
+    "objectID": "variables.html",
+    "href": "variables.html",
+    "title": "4  Data Types and Variables",
+    "section": "",
+    "text": "4.1 Data Types\nIn coding, all data we utilise to represent something can be categorised into types. If we want to easily access it again, we must store it somewhere.\nThink about a library. Each aisle has a different category, which they refer to by a number, or a name. Within those aisles are lots of books fitting that category. Each book is assigned a number, so the librarians can easily find the books a reader may refer to so they can check it out for them if they can’t find. In coding, those numbers that the books are refered by are variables,and the categories are data types.",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Types and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "variables.html#data-types",
+    "href": "variables.html#data-types",
+    "title": "4  Data Types and Variables",
+    "section": "",
+    "text": "Integers (Ints)\nThink about maths at school. Have you studied what an integer is? They’re the exact same thing in programming! You’ll find that with a lot of programming concepts, that they relate back to maths because computer science (which programming originated from) is very specific type of mathematics, which we call applied mathematics. If you don’t know what an integer is,that’s okay! An integer is just a whole number. So 4, 249,1739101. It doesn’t matter how long it is,it just can’t be a fraction or have a decimal.\n\n\nFloats\nThese are your decimal numbers. So 5.8, 0.126, 190.153920918. It can be any number of decimal places, it just has to have that decimal point.\n\n\nCharacters (Chars)\nThese are any singular letter enclosed in quotation marks (’‘). It doesn’t have to be an alphabetical letter, it can be a number or an actual character/symbol too!. So ’a’, ‘3’, ‘/’. The quotation marks are important to make sure Python knows you’re calling a char, which becomes important if you want to represent a number as a letter – it’d just think it’s an integer otherwise!\n\n\nStrings\nThink of anytime you have to quote something someone said. “It’s like this, right?”. This is what we call a string in programming. If you want to quote something or display text, you’ll have to wrap it in quotation marks. Otherwise, how else will Python know you want that to be displayed as text and not call variable names that may or may not exist.\n\n\n\n\n\n\nNoteStrings in other Programming Languages\n\n\n\n\n\nIn other programming languages, strings aren’t a data type and instead are considered an array of chars.\n\n\n\n\n\nBoolean\nBoolean is an important data type. They’re the foundation for conditionals and are everywhere not only in programming but in real life. Boolean has two possible choices, either it’s True or it’s False. Think of a light switch, it can only be either on or off. This is what we call binary. You’ll see this a lot in maths, and computers themselves rely on binary digits.\n\n\n\n\n\n\nNoteMore info on Binary within Computing\n\n\n\n\n\nWithin computer science, they are refered to as bits, which hold values of 1(True) or 0(False). In other programming languages, they don’t have a boolean data type or may only represent it as 1 or 0. In python, we can use words to make it easier - True and False. If you go on to study computer science, you’ll find out about boolean algebra.\n\n\n\n\n\n\n\n\n\nWarningCaution with Capitalisation\n\n\n\nIn Python, True and False must be capitalised otherwise it’ll think you’re talking about an object or variable named true and false. (We’ll get to objects later ;))\n\n\n\n\n\n\n\n\nNoteBonus: Data Type Declaration\n\n\n\n\n\nIn other languages, you have to declare the data types before you use them so the program knows what your data is meant to be. Python makes this easy as it recognises what data type you wrote based on its characteristics so you don’t need to.",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Types and Variables</span>"
     ]
   },
   {
     "objectID": "variables.html#variables",
     "href": "variables.html#variables",
-    "title": "2  Data Types and Variables",
-    "section": "",
-    "text": "Integers (Ints)\nThink about maths at school. Have you studied what an integer is? They’re the exact same thing in programming! You’ll find that with a lot of programming concepts, that they relate back to maths because computer science (which programming originated from) is very specific type of mathematics, which we call applied mathematics. If you don’t know what an integer is,that’s okay! An integer is just a whole number. So 4, 249,1739101. It doesn’t matter how long it is,it just can’t be a fraction or have a decimal.\n\n\nFloats\nThese are your decimal numbers. So 5.8, 0.126, 190.153920918. It can be any number of decimal places,it just has to have that decimal point.\n\n\nCharacters (Chars)\nThese are any singular letter enclosed in quotation marks (““). It doesn’t have to be a number, it can be a number or an actual character/symbol too!. So ‘a’, ‘3’, ‘/’.",
+    "title": "4  Data Types and Variables",
+    "section": "4.2 Variables",
+    "text": "4.2 Variables\nAs stated above, to make things easier for ourselves, we can store important data in variables. Throughout our code, instead of writing that same data over and over again, we can recall it simply with a variable. This comes in handy if our data is very long! It makes our code clean too, so other people can read it more easily.\n\nNaming variables\nWe name variables as descriptively as we can so it’s easier to remember when we recall it. So if we have a integer, we may want to name it number. If we have multiple numbers with different meanings, maybe we’ll name one mean if we’re calculating the mean of student scores, count if we’re counting something or studentTotal if we’re tallying students in the class. If we’re getting the user’s name, name itself could work. Think about what your variable represents and call it that. Just make sure it’s short enough to recall easily so it’s readable.\n\n\nAssigning Variables\nWhat name did you just come up with? That’s the first thing we need to type – the name of our variable. Then, we need an equals sign (=),then lastly we type what we want to store in the variable – our data types.\n\nnameOfVariable = “This is our data type - a string!”\n\nIt’ll be easier to remember if you consider the equals sign the thing that balances both sides. We read it from right to left, opposite to how English is read. First the python interpreter will look at the right side, and find our long string “This is our data type - a string!”. Then is comes across to the equals sign, and it knows it needs to assign it. Then it sees nameOfVariable, and now it knows where to put that string.\n\n\n\n\n\n\nNoteHow does it know that?\n\n\n\n\n\nSince Python is such a simple language, it abstracts (or hides) a lot to the user. They don’t need to know how it works, it just does. Normally when it sees a string, it just blips through it and forgets it after its used it. When it assigns it to a variable, it stores it in memory. Think of memory like a whole bunch of addresses – like your email contact list. You’d probably have a name to an email address, so you can just type in their name instead of having to remember their email address. That variable name is really a pointer, pointing to the address where your data is stored.\n\n\n\nNotice how two spaces were placed on either side of the equals sign? This is a formatting convention in python. To make it more readable, make sure to place a space on either side of the equals sign.",
     "crumbs": [
       "Basics",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Types and Variables</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Data Types and Variables</span>"
+    ]
+  },
+  {
+    "objectID": "conditional.html",
+    "href": "conditional.html",
+    "title": "5  Conditionals and Conditional Statements",
+    "section": "",
+    "text": "5.1 Conditionals\nConditionals are much like the type of statements you’ll see in math. (1 &lt; 5, 7 =&gt;3) The power it holds when we use them in python is that we can compare variables to numbers through checking if it’s greater than, less than or equal. Equal signs also work for strings and chara to check if they’re equivalent. What may surprise you is that less than and greater than also work for chars. In reality, chars are actually just assigned numbers, these are deemed their ASCII values. These never change, so you can check if '%' &lt; 'A'. An ASCII table is included below for your reference.\nIn python, we can check if a data type is equal by using ==.\nThe point of conditionals is that by comparing two data types, a boolean will be produced, telling you whether rhe conditional is true or false. This is why it’s called a conditional, because it’s a condition it must pass.\nmagicNumber = 6\nmagicString = \"Magic!\"\nprint(f\"Is magicNumber &lt; 4?  {magicNumber &lt; 4}\")\nprint(f\"Does magicString == 'Magic!'? {magicString == 'Magic!'}\")\n\nIs magicNumber &lt; 4?  False\nDoes magicString == 'Magic!'? True",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Conditionals and Conditional Statements</span>"
+    ]
+  },
+  {
+    "objectID": "conditional.html#conditionals",
+    "href": "conditional.html#conditionals",
+    "title": "5  Conditionals and Conditional Statements",
+    "section": "",
+    "text": "Logic\nConditionals and booleans are a lot more complex than originally discussed. This involves something called logic. You may have heard logic used in other situations, like calling someone’s argument or perspective illogical. Logic in this context,philosophy, is actually the same logic we use in mathematics and respectively, programming.\n\n\n\n\n\n\nNoteIf you want to know more\n\n\n\n\n\nFormal logic is a whole lot more complex than what I’ll briefly discuss, and if you’re interested you may research it yourself.\n\n\n\nLogic, as we’ll use it primarily involves use of the phrases and, or and not. In other languages, they use symbols to represent these, but in Python, we just use the words. These are used mainly with conditionals and result in a boolean. They check both the left-hand and right-hand side of itself. For and, it checks if both statements are True. For or it checks if at least one of the statements are True. For not, it simply produces the opposite of the boolean(remember each condition results in a boolean).\n\n(True Condition) and ( True Condition) = True\n(False Condition) and ( True Condition) = False\n(False Condition) and ( False Condition) = False\n\n\n(False Condition) or ( True Condition) = True\n(True Condition) or ( True Condition) = True\n(False Condition) or ( False Condition) = False\n\n\nnot (False Condition) = True\nnot (True Condition) = False\n\nThis can get a lot more complex with even more conditions, however it’d be easiest to remember both and and or only evaluate between two conditions, while not only evaluates one. So if you have more than one, break it down into brackets to make it clearer what is being evaluated, making it easier for you and others to understand!\n\nprint((magicNumber &lt; 4) and (magicString == 'Magic!'))\nprint((magicNumber &lt; 4) or (magicString == 'Magic!'))\nprint(not (magicNumber &lt; 4))\n\nFalse\nTrue\nTrue\n\n\nThis can get a little bit confusing, so let’s run down what the above code did.\nIn the first line, it checked whether magicNumber is less than 4 and magicString is the same as the string ‘Magic!’. Even though magicString does equal ‘Magic!’, magicNumber isn’t less than 4, so it is False.\nIn the second line, it checked whether either magicNumber is less than 4 or magicString is the same as the string ‘Magic!’. MagicNumber not being less than 4 doesn’t matter, as it’s checking whether at least one of the conditionals are True. MagicString == ‘Magic!’ results in True, therefore the entire condition is True.\nIn the third line, it is simpler as it is just checking if magic number is less than 4. Since it isn’t, it resolves to False, and the not in front negates that False to True.",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Conditionals and Conditional Statements</span>"
+    ]
+  },
+  {
+    "objectID": "loops.html",
+    "href": "loops.html",
+    "title": "6  Loops",
+    "section": "",
+    "text": "6.1 While loops\nWhen writing code, we tend to need to make something repeat itself. This enables us to not have to write multiple lines of code doing the same thing over and over again or with minor differences. You’ll find below there are use cases for code that remains the same that we want to repeat,and some for code that we want to repeat everything except make the number increase each time. We’ll get into those below.\nThe basic concept of a while loop is that we want to repeat something while a conditional is true. What you expand beyond that, can be as simple or complex as you like. To exit that loop instead of have it run forever with no way to get out, is to do something to make that conditional false. Typically, in smaller programs like the example below, this will be something that will happen accordingly to the design of it, however in more complex scenarios you may need to check to see if another conditional is true, so you can then set the conditional for the while loop to false.\nnumber = 0\nwhile ( number &lt; 10):\n    print(\"Entering the while loop\")\n    print(f\"Adding {number} + 1\")\n    number = number + 1\n    print(f\"Number is now set to {number}\")\n\nEntering the while loop\nAdding 0 + 1\nNumber is now set to 1\nEntering the while loop\nAdding 1 + 1\nNumber is now set to 2\nEntering the while loop\nAdding 2 + 1\nNumber is now set to 3\nEntering the while loop\nAdding 3 + 1\nNumber is now set to 4\nEntering the while loop\nAdding 4 + 1\nNumber is now set to 5\nEntering the while loop\nAdding 5 + 1\nNumber is now set to 6\nEntering the while loop\nAdding 6 + 1\nNumber is now set to 7\nEntering the while loop\nAdding 7 + 1\nNumber is now set to 8\nEntering the while loop\nAdding 8 + 1\nNumber is now set to 9\nEntering the while loop\nAdding 9 + 1\nNumber is now set to 10",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Loops</span>"
+    ]
+  },
+  {
+    "objectID": "loops.html#while-loops",
+    "href": "loops.html#while-loops",
+    "title": "6  Loops",
+    "section": "",
+    "text": "while(conditional):\ndo something\nif something else:\nconditional = false",
+    "crumbs": [
+      "Basics",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Loops</span>"
     ]
   },
   {

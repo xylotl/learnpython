@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Introduction – Intro to Python for Kids and Teens</title>
+<title>5&nbsp; Conditionals and Conditional Statements – Intro to Python for Kids and Teens</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -33,8 +68,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./setup.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./loops.html" rel="next">
+<link href="./variables.html" rel="prev">
 <link href="./favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -260,7 +295,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./characteristics.html">Basics</a></li><li class="breadcrumb-item"><a href="./conditional.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conditionals and Conditional Statements</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -296,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -329,7 +364,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./conditional.html" class="sidebar-item-text sidebar-link">
+  <a href="./conditional.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conditionals and Conditional Statements</span></span></a>
   </div>
 </li>
@@ -368,13 +403,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-do-you-want-to-learn-python-think-about-it-for-a-moment." id="toc-why-do-you-want-to-learn-python-think-about-it-for-a-moment." class="nav-link active" data-scroll-target="#why-do-you-want-to-learn-python-think-about-it-for-a-moment."><span class="header-section-number">1.1</span> Why do you want to learn python? Think about it for a moment.</a>
+  <li><a href="#conditionals" id="toc-conditionals" class="nav-link active" data-scroll-target="#conditionals"><span class="header-section-number">5.1</span> Conditionals</a>
   <ul class="collapse">
-  <li><a href="#do-you-want-to-create-something-what-is-that" id="toc-do-you-want-to-create-something-what-is-that" class="nav-link" data-scroll-target="#do-you-want-to-create-something-what-is-that">Do you want to create something? What is that?</a></li>
-  <li><a href="#are-you-unfamiliar-with-programming-and-just-want-to-learn-how-to-code" id="toc-are-you-unfamiliar-with-programming-and-just-want-to-learn-how-to-code" class="nav-link" data-scroll-target="#are-you-unfamiliar-with-programming-and-just-want-to-learn-how-to-code">Are you unfamiliar with programming and just want to learn how to code?</a></li>
-  <li><a href="#do-you-hate-repeating-things-want-to-automate-the-things-you-do-on-a-daily-basis" id="toc-do-you-hate-repeating-things-want-to-automate-the-things-you-do-on-a-daily-basis" class="nav-link" data-scroll-target="#do-you-hate-repeating-things-want-to-automate-the-things-you-do-on-a-daily-basis">Do you hate repeating things? Want to automate the things you do on a daily basis?</a></li>
-  <li><a href="#interested-in-data-science-or-ai" id="toc-interested-in-data-science-or-ai" class="nav-link" data-scroll-target="#interested-in-data-science-or-ai">Interested in data science or AI?</a></li>
-  <li><a href="#dont-know-yet-thats-okay" id="toc-dont-know-yet-thats-okay" class="nav-link" data-scroll-target="#dont-know-yet-thats-okay">Don’t know yet? That’s okay!</a></li>
+  <li><a href="#logic" id="toc-logic" class="nav-link" data-scroll-target="#logic">Logic</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -383,9 +414,9 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./characteristics.html">Basics</a></li><li class="breadcrumb-item"><a href="./conditional.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conditionals and Conditional Statements</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conditionals and Conditional Statements</span></h1>
 </div>
 
 
@@ -402,34 +433,70 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="why-do-you-want-to-learn-python-think-about-it-for-a-moment." class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="why-do-you-want-to-learn-python-think-about-it-for-a-moment."><span class="header-section-number">1.1</span> Why do you want to learn python? Think about it for a moment.</h2>
-<section id="do-you-want-to-create-something-what-is-that" class="level3">
-<h3 class="anchored" data-anchor-id="do-you-want-to-create-something-what-is-that">Do you want to create something? What is that?</h3>
-<section id="if-its-something-web-based" class="level4">
-<h4 class="anchored" data-anchor-id="if-its-something-web-based">If it’s something web based:</h4>
-<p>Unless it’s backend (think what is running behind what you see on the website), maybe html, css and javascript would be better for you.</p>
-</section>
-<section id="if-its-a-game" class="level4">
-<h4 class="anchored" data-anchor-id="if-its-a-game">If it’s a game:</h4>
-<p>An objected orientated language like c#,c++ or java would be more suitable,unless you want to make something very simple.</p>
-</section>
-</section>
-<section id="are-you-unfamiliar-with-programming-and-just-want-to-learn-how-to-code" class="level3">
-<h3 class="anchored" data-anchor-id="are-you-unfamiliar-with-programming-and-just-want-to-learn-how-to-code">Are you unfamiliar with programming and just want to learn how to code?</h3>
-<p>Python is ideal for you. If you’ve learnt scratch, it’s the next step to <em>real</em> programming. It’s simple, easy, and gets the job done. If you want to make a game or just code, it’s a perfect stepping stone before you get into the deeper stuff.</p>
-</section>
-<section id="do-you-hate-repeating-things-want-to-automate-the-things-you-do-on-a-daily-basis" class="level3">
-<h3 class="anchored" data-anchor-id="do-you-hate-repeating-things-want-to-automate-the-things-you-do-on-a-daily-basis">Do you hate repeating things? Want to automate the things you do on a daily basis?</h3>
-<p>Python is perfect for this task. If you have a Unix based system, learning a Bourne-based shell would be great to learn alongside,or if you’re a windows user,powershell. Scrape the web, gather data, filter, it’s all possible.</p>
-</section>
-<section id="interested-in-data-science-or-ai" class="level3">
-<h3 class="anchored" data-anchor-id="interested-in-data-science-or-ai">Interested in data science or AI?</h3>
-<p>Most AI utilises python, so this is the language you want if you want to take a step up from just using chatgpt and <em>train your own model</em>. Python also has a lot of scientific libraries (these are additional things you can download to use more inbuilt code!) so it’s great for data science and more scientific programming.</p>
-</section>
-<section id="dont-know-yet-thats-okay" class="level3">
-<h3 class="anchored" data-anchor-id="dont-know-yet-thats-okay">Don’t know yet? That’s okay!</h3>
-<p>Try it and see if you like it.</p>
+<section id="conditionals" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="conditionals"><span class="header-section-number">5.1</span> Conditionals</h2>
+<p>Conditionals are much like the type of statements you’ll see in math. (1 &lt; 5, 7 =&gt;3) The power it holds when we use them in python is that we can compare variables to numbers through checking if it’s greater than, less than or equal. Equal signs also work for strings and chara to check if they’re equivalent. What may surprise you is that less than and greater than <em>also</em> work for chars. In reality, chars are actually just assigned numbers, these are deemed their ASCII values. These never change, so you can check if <code>'%' &lt; 'A'</code>. An ASCII table is included below for your reference.</p>
+<p>In python, we can check if a data type is equal by using <code>==</code>.</p>
+<p>The point of conditionals is that by comparing two data types, a boolean will be produced, telling you whether rhe conditional is true or false. This is why it’s called a conditional, because it’s a condition it must pass.</p>
+<div id="c9643648" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>magicNumber <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>magicString <span class="op">=</span> <span class="st">"Magic!"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Is magicNumber &lt; 4?  </span><span class="sc">{</span>magicNumber <span class="op">&lt;</span> <span class="dv">4</span><span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Does magicString == 'Magic!'? </span><span class="sc">{</span>magicString <span class="op">==</span> <span class="st">'Magic!'</span><span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Is magicNumber &lt; 4?  False
+Does magicString == 'Magic!'? True</code></pre>
+</div>
+</div>
+<section id="logic" class="level3">
+<h3 class="anchored" data-anchor-id="logic">Logic</h3>
+<p>Conditionals and booleans are a lot more complex than originally discussed. This involves something called <em>logic</em>. You may have heard logic used in other situations, like calling someone’s argument or perspective illogical. Logic in this context,philosophy, is actually the same logic we use in mathematics and respectively, programming.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="If you want to know more">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>If you want to know more
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Formal logic is a whole lot more complex than what I’ll briefly discuss, and if you’re interested you may research it yourself.</p>
+</div>
+</div>
+</div>
+<p>Logic, as we’ll use it primarily involves use of the phrases <code>and</code>, <code>or</code> and <code>not</code>. In other languages, they use symbols to represent these, but in Python, we just use the words. These are used mainly with conditionals and result in a boolean. They check both the left-hand and right-hand side of itself. For <code>and</code>, it checks if both statements are True. For <code>or</code> it checks if at least one of the statements are True. For <code>not</code>, it simply produces the opposite of the boolean(remember each condition results in a boolean).</p>
+<blockquote class="blockquote">
+<p>(True Condition) and ( True Condition) = True<br>
+(False Condition) and ( True Condition) = False<br>
+(False Condition) and ( False Condition) = False</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>(False Condition) or ( True Condition) = True<br>
+(True Condition) or ( True Condition) = True<br>
+(False Condition) or ( False Condition) = False</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>not (False Condition) = True<br>
+not (True Condition) = False</p>
+</blockquote>
+<p>This can get a lot more complex with even more conditions, however it’d be easiest to remember both <code>and</code> and <code>or</code> only evaluate between two conditions, while <code>not</code> only evaluates one. So if you have more than one, break it down into brackets to make it clearer what is being evaluated, making it easier for you and others to understand!</p>
+<div id="51c00d2b" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>((magicNumber <span class="op">&lt;</span> <span class="dv">4</span>) <span class="kw">and</span> (magicString <span class="op">==</span> <span class="st">'Magic!'</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>((magicNumber <span class="op">&lt;</span> <span class="dv">4</span>) <span class="kw">or</span> (magicString <span class="op">==</span> <span class="st">'Magic!'</span>))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="kw">not</span> (magicNumber <span class="op">&lt;</span> <span class="dv">4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>False
+True
+True</code></pre>
+</div>
+</div>
+<p>This can get a little bit confusing, so let’s run down what the above code did.</p>
+<p>In the first line, it checked whether magicNumber is less than 4 <strong>and</strong> magicString is the same as the string ‘Magic!’. Even though magicString does equal ‘Magic!’, magicNumber isn’t less than 4, so it is False.</p>
+<p>In the second line, it checked whether either magicNumber is less than 4 <strong>or</strong> magicString is the same as the string ‘Magic!’. MagicNumber not being less than 4 doesn’t matter, as it’s checking whether at least one of the conditionals are True. MagicString == ‘Magic!’ results in True, therefore the entire condition is True.</p>
+<p>In the third line, it is simpler as it is just checking if magic number is less than 4. Since it isn’t, it resolves to False, and the not in front negates that False to True.</p>
 
 
 </section>
@@ -851,13 +918,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Preface">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./variables.html" class="pagination-link" aria-label="Data Types and Variables">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Data Types and Variables</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./setup.html" class="pagination-link" aria-label="Installing and setting up python">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installing and setting up python</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./loops.html" class="pagination-link" aria-label="Loops">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Loops</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
